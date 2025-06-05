@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Blue Data Analysis Projects</title>
+  <link rel="stylesheet" href="skyblue_data.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <canvas id="clouds-bg"></canvas>
+  <div class="container">
+    <h1>Data Analysis with Python</h1>
+    <p class="subtitle">Exploration, cleaning, visualization, and statistical inference with Pandas, Seaborn, and Matplotlib.<br>Compatible files: <b>.csv, .xlsx, .parquet, .ipynb, .py</b></p>
+    <div class="projects">
+      <!-- Project 1: Air Quality Analysis -->
+      <section class="project-card">
+        <h2>Air Quality Analysis in Latin America</h2>
+        <p>Exploratory analysis of PM2.5, CO, and NO₂ levels using public datasets from the World Air Quality Index.</p>
+        <div class="file-links">
+          <a href="https://docs.google.com/spreadsheets/d/1Qw7kQw7kQw7kQw7kQw7kQw7kQw7kQw7/export?format=csv" target="_blank">Download CSV</a>
+          <a href="#" class="disabled">Download .ipynb</a>
+          <a href="#" class="disabled">Download .py</a>
+        </div>
+        <div id="viz-airquality" class="viz"></div>
+      </section>
+      <!-- Project 2: Mental Health Search Trends -->
+      <section class="project-card">
+        <h2>Mental Health Search Trends</h2>
+        <p>Correlation analysis of search terms like “depression” and “anxiety” using Google Trends data.</p>
+        <div class="file-links">
+          <a href="https://trends.google.com/trends/explore?date=all&q=depression,anxiety" target="_blank">View Google Trends</a>
+          <a href="#" class="disabled">Download .csv</a>
+          <a href="#" class="disabled">Download .ipynb</a>
+          <a href="#" class="disabled">Download .parquet</a>
+        </div>
+        <div id="viz-mentalhealth" class="viz"></div>
+      </section>
+      <!-- Project 3: Food Price Analysis -->
+      <section class="project-card">
+        <h2>Food Price Analysis in Colombia</h2>
+        <p>Monthly price evolution of rice, potatoes, and eggs using Google Finance and public datasets.</p>
+        <div class="file-links">
+          <a href="https://docs.google.com/spreadsheets/d/1A2B3C4D5E6F7G8H9I0J/export?format=xlsx" target="_blank">Download .xlsx</a>
+          <a href="#" class="disabled">Download .ipynb</a>
+          <a href="#" class="disabled">Download .py</a>
+        </div>
+        <div id="viz-foodprices" class="viz"></div>
+      </section>
+    </div>
+  </div>
+  <script src="skyblue_data.js"></script>
+</body>
+</html>

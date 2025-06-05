@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to bottom, #b3e0ff 0%, #e6f7ff 100%);
+  min-height: 100vh;
+  color: #222;
+}
+#clouds-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem 1rem;
+}
+h1 {
+  text-align: center;
+  color: #3498db;
+  margin-bottom: 0.2em;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+.subtitle {
+  text-align: center;
+  color: #5d6d7e;
+  margin-bottom: 2em;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.project-card {
+  background: rgba(240, 245, 255, 0.85);
+  border-radius: 1.2em;
+  box-shadow: 0 4px 24px 0 rgba(120, 180, 255, 0.13);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 340px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(80, 140, 200, 0.18);
+}
+.project-card h2 {
+  color: #2980b9;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+}
+.project-card p {
+  color: #34495e;
+  margin-bottom: 1em;
+}
+.file-links {
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+}
+.file-links a {
+  background: #e3f1fb;
+  color: #2980b9;
+  padding: 0.4em 0.9em;
+  border-radius: 0.7em;
+  text-decoration: none;
+  font-size: 0.98em;
+  transition: background 0.2s, color 0.2s;
+}
+.file-links a:hover:not(.disabled) {
+  background: #b3e0ff;
+  color: #1a5276;
+}
+.file-links .disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  background: #d6eaf8;
+  color: #8395a7;
+}
+.viz {
+  width: 100%;
+  min-height: 180px;
+  margin-top: 0.5em;
+  background: rgba(200, 220, 240, 0.18);
+  border-radius: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 95vw;
+    min-width: 0;
+  }
+}
