@@ -19,6 +19,7 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 2rem 1rem 3rem 1rem;
+  background: transparent;
 }
 h1 {
   text-align: center;
@@ -29,7 +30,7 @@ h1 {
 }
 .subtitle {
   text-align: center;
-  color: #5d6d7e;
+  color: #1976d2;
   margin-bottom: 2em;
 }
 .projects {
@@ -39,19 +40,17 @@ h1 {
   justify-content: center;
 }
 .project-card {
-  background: rgba(240, 245, 255, 0.85);
-  border-radius: 1.2em;
-  box-shadow: 0 4px 24px 0 rgba(120, 180, 255, 0.13);
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  width: 340px;
-  min-height: 420px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  background: rgba(255,255,255,0.38);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px #90caf933, 0 1.5px 0 #fff2;
+  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  color: #222;
+  backdrop-filter: blur(2px);
+  margin-bottom: 2.5rem;
   transition: box-shadow 0.2s;
 }
 .project-card:hover {
-  box-shadow: 0 8px 32px 0 rgba(80, 140, 200, 0.18);
+  box-shadow: 0 8px 32px #90caf955, 0 2px 0 #fff3;
 }
 .project-card h2 {
   color: #2980b9;
@@ -64,10 +63,13 @@ h1 {
   margin-bottom: 1em;
 }
 .file-links {
-  margin-bottom: 1em;
+  background: rgba(255,255,255,0.18);
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
   display: flex;
+  gap: 1.2rem;
   flex-wrap: wrap;
-  gap: 0.7em;
 }
 .file-links a {
   background: #e3f1fb;
@@ -92,8 +94,10 @@ h1 {
   width: 100%;
   min-height: 180px;
   margin-top: 0.5em;
-  background: rgba(200, 220, 240, 0.18);
+  background: rgba(255,255,255,0.13);
   border-radius: 0.7em;
+  padding: 0.7rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
